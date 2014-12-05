@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/recruiter_demanddetail_relativelayout_top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_top_height" >
+
+        <TextView
+            android:id="@+id/recruiter_demanddetail_textview_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="职位详细" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/item_horizontal_margin"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/recruiter_demanddetail_imageview_sendmail"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center_horizontal"
+                android:scaleType="centerInside"
+                android:src="@drawable/selecter_recruiter_sendmail" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="申请职位"
+                android:textSize="10sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/item_horizontal_margin"
+        android:layout_marginRight="@dimen/item_horizontal_margin"
+        android:background="@drawable/shape_normal_item"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/item_imageview_margin_vertical_small"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="@dimen/item_imageview_width_small"
+                android:layout_height="@dimen/item_imageview_height_small"
+                android:layout_marginRight="@dimen/item_imageview_margin_right_small"
+                android:scaleType="centerInside"
+                android:src="@drawable/recruiter_job" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/item_imageview_margin_right_medium"
+                        android:gravity="left"
+                        android:text="职位名称" />
+
+                    <TextView
+                        android:id="@+id/item_jobname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/item_imageview_margin_right_medium"
+                        android:gravity="left"
+                        android:text="职位类别" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/item_field"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="left" />
+
+                        <TextView
+                            android:id="@+id/item_job"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="left" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/item_imageview_margin_vertical_small"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="@dimen/item_imageview_width_small"
+                android:layout_height="@dimen/item_imageview_height_small"
+                android:layout_marginRight="@dimen/item_imageview_margin_right_small"
+                android:scaleType="centerInside"
+                android:src="@drawable/recruiter_salary" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/item_imageview_margin_right_medium"
+                android:gravity="left"
+                android:text="月薪范围" />
+
+            <TextView
+                android:id="@+id/item_salary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="item_salary" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/item_imageview_margin_vertical_small"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="@dimen/item_imageview_width_small"
+                android:layout_height="@dimen/item_imageview_height_small"
+                android:layout_marginRight="@dimen/item_imageview_margin_right_small"
+                android:scaleType="centerInside"
+                android:src="@drawable/recruiter_experience" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/item_imageview_margin_right_medium"
+                android:gravity="left"
+                android:text="需求经验" />
+
+            <TextView
+                android:id="@+id/item_experience"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="item_experience" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/item_horizontal_margin"
+        android:layout_marginRight="@dimen/item_horizontal_margin"
+        android:layout_marginTop="@dimen/item_vertical_margin"
+        android:background="@drawable/shape_normal_item"
+        android:scrollbars="none" >
+
+        <TextView
+            android:id="@+id/item_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </ScrollView>
+
+</LinearLayout>

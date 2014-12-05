@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/register_relativelayout_top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_top_height" >
+
+        <TextView
+            android:id="@+id/register_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="注册" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/register_relativelayout_top" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/register_edittext_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="手机号"
+                android:inputType="phone"
+                android:maxLength="20" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/register_edittext_smscode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:hint="短信验证码"
+                    android:inputType="number" />
+
+                <Button
+                    android:id="@+id/smscode_send"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:text="获取验证码" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/register_edittext_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="密码"
+                android:inputType="textPassword"
+                android:maxLength="20" />
+
+            <EditText
+                android:id="@+id/register_edittext_password_retype"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="确认密码"
+                android:inputType="textPassword"
+                android:maxLength="20" />
+            
+            <Button
+                android:id="@+id/register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/item_vertical_margin"
+                android:text="注册"
+                android:textSize="16sp" />
+
+            <!--
+                 <RelativeLayout
+                android:id="@+id/register_relativelayout_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/register_imageview_phone"
+                    android:layout_width="@dimen/activity_imagebutton_width"
+                    android:layout_height="@dimen/activity_imagebutton_height"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/jobhunter_phone" />
+
+                <EditText
+                    android:id="@+id/register_edittext_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/register_imageview_phone"
+                    android:hint="手机号"
+                    android:inputType="phone"
+                    android:maxLength="20" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/register_relativelayout_smscode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/register_relativelayout_phone" >
+
+                <ImageView
+                    android:id="@+id/register_imageview_smscode"
+                    android:layout_width="@dimen/activity_imagebutton_width"
+                    android:layout_height="@dimen/activity_imagebutton_height"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/jobhunter_smscode" />
+
+                <EditText
+                    android:id="@+id/register_edittext_smscode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/register_imageview_smscode"
+                    android:hint="短信验证码"
+                    android:inputType="number" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/register_relativelayout_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/register_relativelayout_smscode" >
+
+                <ImageView
+                    android:id="@+id/register_imageview_password"
+                    android:layout_width="@dimen/activity_imagebutton_width"
+                    android:layout_height="@dimen/activity_imagebutton_height"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/jobhunter_password" />
+
+                <EditText
+                    android:id="@+id/register_edittext_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/register_imageview_password"
+                    android:hint="密码"
+                    android:inputType="textPassword"
+                    android:maxLength="20" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/register_relativelayout_password_retype"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/register_relativelayout_password" >
+
+                <ImageView
+                    android:id="@+id/register_imageview_password_retype"
+                    android:layout_width="@dimen/activity_imagebutton_width"
+                    android:layout_height="@dimen/activity_imagebutton_height"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/jobhunter_password_retype" />
+
+                <EditText
+                    android:id="@+id/register_edittext_password_retype"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/register_imageview_password_retype"
+                    android:hint="确认密码"
+                    android:inputType="textPassword"
+                    android:maxLength="20" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/register_imageview_register"
+                android:layout_width="@dimen/activity_imagebutton_width"
+                android:layout_height="@dimen/activity_imagebutton_height"
+                android:layout_below="@id/register_relativelayout_password_retype"
+                android:layout_centerHorizontal="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/check" />
+            -->
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

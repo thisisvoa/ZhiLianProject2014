@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/recruiter_person_relativelayout_top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_top_height" >
+
+        <TextView
+            android:id="@+id/recruiter_person_textview_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="简介" />
+    </RelativeLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/item_horizontal_margin"
+        android:layout_marginRight="@dimen/item_horizontal_margin"
+        android:background="@drawable/shape_normal_item"
+        android:orientation="vertical" >
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/item_imageview_margin_vertical_small"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="@dimen/item_imageview_width_small"
+                android:layout_height="@dimen/item_imageview_height_small"
+                android:layout_marginRight="@dimen/item_imageview_margin_right_medium"
+                android:scaleType="centerInside"
+                android:src="@drawable/recruiter_person" />
+
+            <TextView
+                android:id="@+id/recruiter_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/item_imageview_margin_vertical_small"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="@dimen/item_imageview_width_small"
+                android:layout_height="@dimen/item_imageview_height_small"
+                android:layout_marginRight="@dimen/item_imageview_margin_right_medium"
+                android:scaleType="centerInside"
+                android:src="@drawable/recruiter_address" />
+
+            <TextView
+                android:id="@+id/recruiter_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/item_imageview_margin_vertical_small"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="@dimen/item_imageview_width_small"
+                android:layout_height="@dimen/item_imageview_height_small"
+                android:layout_marginRight="@dimen/item_imageview_margin_right_medium"
+                android:scaleType="centerInside"
+                android:src="@drawable/recruiter_email" />
+
+            <TextView
+                android:id="@+id/recruiter_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/item_horizontal_margin"
+        android:layout_marginRight="@dimen/item_horizontal_margin"
+        android:layout_marginTop="@dimen/item_vertical_margin"
+        android:background="@drawable/shape_normal_item"
+        android:scrollbars="none" >
+
+        <TextView
+            android:id="@+id/recruiter_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <com.amap.api.maps.MapView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/map_mapview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </com.amap.api.maps.MapView>
+	
+	<ImageView
+        android:id="@+id/map_imageview_jobhunter"
+        android:layout_width="@dimen/activity_imagebutton_width"
+        android:layout_height="@dimen/activity_imagebutton_height"
+                
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/map_horizontal_margin"
+        android:layout_marginBottom="@dimen/map_vertical_margin"
+        
+        android:src="@drawable/map_jobhunter"
+        android:scaleType="centerInside" />
+    
+    <ImageView
+        android:id="@+id/map_imageview_markers"
+        android:layout_width="@dimen/activity_imagebutton_width_small"
+        android:layout_height="@dimen/activity_imagebutton_height_small"
+        
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/map_horizontal_margin"
+        android:layout_marginBottom="@dimen/map_vertical_margin"
+        
+        android:src="@drawable/selecter_map_markers"
+        android:scaleType="centerInside" />
+    
+</RelativeLayout>

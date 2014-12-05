@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selecter_item_markers"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/item_horizontal_margin"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="@dimen/item_imageview_width_medium"
+                android:layout_height="@dimen/item_imageview_height_medium"
+                android:layout_marginRight="@dimen/item_imageview_margin_right_small"
+                android:scaleType="centerInside"
+                android:src="@drawable/jobhunter_applicationhistory_time" />
+
+            <TextView
+                android:id="@+id/applicationhistory_time_hour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:gravity="left" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/applicationhistory_time_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/item_imageview_margin_vertical_small"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="@dimen/item_imageview_width_small"
+                android:layout_height="@dimen/item_imageview_height_small"
+                android:layout_marginRight="@dimen/item_imageview_margin_right_small"
+                android:scaleType="centerInside"
+                android:src="@drawable/recruiter_job" />
+
+            <TextView
+                android:id="@+id/applicationhistory_jobname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/item_imageview_margin_vertical_small"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="@dimen/item_imageview_width_small"
+                android:layout_height="@dimen/item_imageview_height_small"
+                android:layout_marginRight="@dimen/item_imageview_margin_right_small"
+                android:scaleType="centerInside"
+                android:src="@drawable/recruiter_salary" />
+
+            <TextView
+                android:id="@+id/applicationhistory_salary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="@dimen/item_imageview_width_small"
+                android:layout_height="@dimen/item_imageview_height_small"
+                android:layout_marginRight="@dimen/item_imageview_margin_right_small"
+                android:scaleType="centerInside"
+                android:src="@drawable/recruiter_person" />
+
+            <TextView
+                android:id="@+id/applicationhistory_recruiter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

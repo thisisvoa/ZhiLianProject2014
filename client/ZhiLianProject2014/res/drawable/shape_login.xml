@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >  
+  
+    <padding  
+        android:top="@dimen/activity_login_vertical_margin"  
+        android:left="@dimen/activity_login_horizontal_margin"
+        android:right="@dimen/activity_login_horizontal_margin" /> 
+    <solid 
+        android:color="@android:color/transparent" />
+</shape>  

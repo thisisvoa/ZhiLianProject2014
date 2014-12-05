@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+        </FrameLayout>
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_weight="0" >
+        </TabWidget>
+
+        <RadioGroup
+            android:id="@+id/jobhunter_tab_radiogroup"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_buttom_height"
+            android:layout_gravity="bottom"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+            
+            <RadioButton 
+                android:id="@+id/jobhunter_tab_person"
+                style="@style/recruiter_tab_radiobutton"
+                android:layout_marginTop="2.0dp"
+                android:drawableTop="@drawable/selecter_jobhunter_person"
+                android:text="个人" />
+            
+            <RadioButton 
+                android:id="@+id/jobhunter_tab_applicationhistory"
+                style="@style/recruiter_tab_radiobutton"
+                android:layout_marginTop="2.0dp"
+                android:drawableTop="@drawable/selecter_jobhunter_applicationhistory"
+                android:text="投递历史" />
+            
+            <RadioButton 
+                android:id="@+id/jobhunter_tab_settings"
+                style="@style/recruiter_tab_radiobutton"
+                android:layout_marginTop="2.0dp"
+                android:drawableTop="@drawable/selecter_jobhunter_settings"
+                android:text="设置" />
+        </RadioGroup>
+    </LinearLayout>
+
+</TabHost>
